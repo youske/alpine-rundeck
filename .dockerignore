@@ -1,5 +1,7 @@
 .git
 .gitignore
 .sync-config.cson
+.remote-sync.json
+Makefile*
 LICENSE
 README*

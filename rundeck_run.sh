@@ -1,4 +1,5 @@
 #!/bin/sh -e
+
 java \
  -Xmx${MEMORY_SIZE}m \
  -d64 \

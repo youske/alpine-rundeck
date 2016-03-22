@@ -1,3 +1,4 @@
+# alpine linux with rundeck
 #
 
 from frolvlad/alpine-oraclejdk8:slim
@@ -21,12 +22,8 @@ COPY rundeck_run.sh /rundeck_run.sh
 
 ENTRYPOINT ["/rundeck_run.sh"]
 
-VOLUME [ \
-  "/rundeck/etc",\
-  "/rundeck/var",\
-  "/rundeck/projects" \
-  "/rundeck/server" ]
+VOLUME  "/rundeck/var"
 
-CMD ["sh"]
+CMD [""]
 
 EXPOSE 4440 4443

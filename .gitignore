@@ -1,0 +1,11 @@
+#
+vendor/
+nodemodules/
+tests/
+
+#
+.sync-config.cson
+.remote-sync.json
+*.swp
+*.lock
+*.lck
