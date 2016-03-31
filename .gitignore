@@ -1,6 +1,6 @@
 #
-vendor/
 node_modules/
+vendor/
 tests/
 
 #
@@ -9,3 +9,7 @@ tests/
 *.swp
 *.lock
 *.lck
+*.*~
+*~
+
+!.gitkeep
