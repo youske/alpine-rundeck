@@ -9,4 +9,20 @@ services:
         soft: 20000
         hard: 40000
       nproc: 65535
+    ports:
+      - "4440:4440"
+      - "4443:4443"
+    volumes:
+      - data:/rundeck-recovery
+    networks:
+      - front
     stdin_open: true
+    tty: true
+
+volumes:
+  data:
+    driver: local
+
+networks:
+  front:
+    driver: bridge

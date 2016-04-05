@@ -20,8 +20,8 @@ RUN java -jar ${RDECK_BASE}/rundeck-launcher.jar --installonly && \
 
 COPY rundeck_run.sh /rundeck_run.sh
 
-VOLUME  "/rundeck/var"
-ENTRYPOINT ["/rundeck_run.sh"]
-CMD [""]
-
 EXPOSE 4440 4443
+
+VOLUME  "/rundeck/var"
+#ENTRYPOINT [""]
+CMD sh /rundeck_run.sh & tail -f >> /dev/null
